@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+      body::after {
+        content: "";
+        background-image: url(https://res.cloudinary.com/devmayor/image/upload/v1589920285/bicycles.png);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+    </style>
   </head>
   <body>
     <noscript>
